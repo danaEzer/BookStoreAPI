@@ -8,17 +8,16 @@ exports.isValidBook = function(book) {
 
 function validateGenre(genre) {
     let genreLowerCase = genre.toString().toLowerCase()
-    // console.log('genreLowerCase', genreLowerCase, genteType[genreLowerCase]);
+    console.log('genreLowerCase', genreLowerCase, genteType[genreLowerCase]);
     return genteType[genreLowerCase];
 }
 
 let genteType = {
-    science: 1,
-    fiction: 2,
-    satire: 3,
-    drama: 4,
-    action: 5,
-    romance: 6,
-    mystery: 7,
-    horror: 8
+    sf: 1,
+    satire: 2,
+    drama: 3,
+    action: 4,
+    romance: 5,
+    mystery: 6,
+    horror: 7
 }
